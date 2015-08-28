@@ -1,5 +1,7 @@
 # MBTransition
 
-实现 `VC` 切换过场动画效果的一种设计，使用时只需要调用一个接口即可实现，对业务代码基本无污染
+实现 `VC` 切换过场动画效果的一种设计，使用时只需要调用一个接口即可实现，对业务代码基本无污染。
+
+已经实现了一个 `MBZoomTransition` 的动画效果，如果想要实现自定义的动画效果，继承 `MBTransition` 然后重写 `+ (instancetype)shared` 和 `- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext` 方法即可。
 
 注： `MBZoomTransition` 使用了 [RZTransitions](https://github.com/Raizlabs/RZTransitions) 中 `RZZoomPushAnimationController.m` 文件内的代码实现动画效果
