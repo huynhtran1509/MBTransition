@@ -1,18 +1,16 @@
+//
+//  MBZoomTransition.m
+//  MBTransition
+//
+//  Created by MmoaaY on 15/8/19.
+//  Copyright (c) 2015年 MmoaaY. All rights reserved.
+//
+
 #import "MBZoomTransition.h"
 
-#define kRZPushScaleChangePct 0.33
+#define kRZPushScaleChangePct 0.0
 
 @implementation MBZoomTransition
-
-+ (instancetype)shared
-{
-    static MBZoomTransition *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [[MBZoomTransition alloc] init];
-    });
-    return instance;
-}
 
 #pragma mark - UIViewControllerContextTransitioning
 
@@ -23,7 +21,7 @@
     UIView *container = [transitionContext containerView];
     
     NSTimeInterval duration = [self transitionDuration:transitionContext];
-    BOOL reversed = [self isReversed:fromVC ToVC:toVC];
+    BOOL reversed = [self isReversedFromViewController:fromVC ToViewController:toVC];
     
     if (!reversed)
     {

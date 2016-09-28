@@ -1,0 +1,16 @@
+PODS:
+  - MBTransition (0.1.0)
+
+DEPENDENCIES:
+  - MBTransition (from `../`)
+
+EXTERNAL SOURCES:
+  MBTransition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBTransition: 475913d2cb8a89c9baeb5118e018d794d380ddb1
+
+PODFILE CHECKSUM: 285a0bffb3185f490a41b43fac93de00bde2db95
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MBTransition_Example' do
+  pod 'MBTransition', :path => '../'
+
+  target 'MBTransition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

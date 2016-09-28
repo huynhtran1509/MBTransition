@@ -1,7 +1,29 @@
 # MBTransition
 
-实现 `VC` 切换过场动画效果的一种设计，使用时只需要调用一个接口即可实现，对业务代码基本无污染。
+[![CI Status](http://img.shields.io/travis/ZhengYidong/MBTransition.svg?style=flat)](https://travis-ci.org/ZhengYidong/MBTransition)
+[![Version](https://img.shields.io/cocoapods/v/MBTransition.svg?style=flat)](http://cocoapods.org/pods/MBTransition)
+[![License](https://img.shields.io/cocoapods/l/MBTransition.svg?style=flat)](http://cocoapods.org/pods/MBTransition)
+[![Platform](https://img.shields.io/cocoapods/p/MBTransition.svg?style=flat)](http://cocoapods.org/pods/MBTransition)
 
-已经实现了一个 `MBZoomTransition` 的动画效果，如果想要实现自定义的动画效果，继承 `MBTransition` 然后重写 `+ (instancetype)shared` 和 `- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext` 方法即可。
+## Example
 
-注： `MBZoomTransition` 使用了 [RZTransitions](https://github.com/Raizlabs/RZTransitions) 中 `RZZoomPushAnimationController.m` 文件内的代码实现动画效果
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+MBTransition is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "MBTransition"
+```
+
+## Author
+
+ZhengYidong, yidong.zheng@ele.me
+
+## License
+
+MBTransition is available under the MIT license. See the LICENSE file for more info.
